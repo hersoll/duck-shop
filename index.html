@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The css file is called output since it is the Tailwind output.
+    The original css file is called style.css -->
+    <link rel="stylesheet" href="output.css" />
+    <title>Duck Shop</title>
+  </head>
+  <body class="bg-gray-950 dark:[color-scheme:dark] font-mono">
+    <header
+      class="fixed z-100 bg-yellow-600 h-20 pl-4 pr-4 w-full flex place-content-between items-center"
+    >
+      <section class="text-4xl font-bold">
+        <a href="index.html" class="black-link">Duck Shop</a>
+      </section>
+      <nav class="flex gap-8 text-xl">
+        <a href="products.html" class="black-link">Products</a>
+        <a href="contact.html" class="black-link">Contact Us</a>
+        <a href="cart.html" class="black-link">Cart (3)</a>
+      </nav>
+    </header>
+    <main class="pt-20 text-yellow-600 flex flex-col justify-center">
+      <!-- Hero image -->
+      <div class="relative">
+        <img
+          src="images/hero.jpg"
+          alt="Several identical rubber ducks lined up in rows"
+          class="w-full h-80 object-cover"
+        />
+        <p class="text-black text-4xl absolute top-56 font-extrabold pl-10">
+          We love ducks. Do you?
+        </p>
+      </div>
+
+      <!-- Top Sellers -->
+      <section class="p-10 flex flex-col items-center gap-4 mb-10">
+        <h2 class="text-3xl font-bold">Top Sellers</h2>
+        <!-- Product cards -->
+        <div class="h-120 w-full overflow-auto text-xl">
+          <!-- Default duck -->
+          <div
+            class="min-w-full p-4 border-yellow-600 border-2 flex gap-4 relative rounded-lg mb-2"
+          >
+            <img
+              src="images/default-duck.jpg"
+              alt="image of the default duck product against a dark background"
+              class="size-28 rounded-lg"
+            />
+            <div class="flex flex-col justify-center">
+              <a
+                href="products/default-duck.html"
+                class="text-2xl yellow-link font-bold"
+                >Default duck</a
+              >
+              <p class="font-thin">149:-</p>
+              <p class="text-lg font-thin">
+                The classic. For all ages and programming languages.
+              </p>
+              <a href="products/default-duck.html" class="text-sm yellow-link"
+                >Read more...</a
+              >
+            </div>
+            <button
+              class="yellow-button absolute bottom-4 right-6 py-2 px-4 bg-yellow-600 text-black rounded-lg"
+            >
+              Add to cart
+            </button>
+          </div>
+
+          <!-- Big duck -->
+          <div
+            class="min-w-full p-4 border-yellow-600 border-2 flex gap-4 relative rounded-lg mb-2"
+          >
+            <img
+              src="images/big-duck.jpg"
+              alt="a floating duck balloon, several meters tall, on a river by a city"
+              class="size-28 rounded-lg"
+            />
+            <div class="flex flex-col justify-center">
+              <a
+                href="products/big-duck.html"
+                class="text-2xl yellow-link font-bold"
+                >Big duck</a
+              >
+              <p class="font-thin">499:-</p>
+              <p class="text-lg font-thin">More duck for your money.</p>
+              <a href="products/big-duck.html" class="text-sm yellow-link"
+                >Read more...</a
+              >
+            </div>
+            <button
+              class="yellow-button absolute bottom-4 right-6 py-2 px-4 bg-yellow-600 text-black rounded-lg"
+            >
+              Add to cart
+            </button>
+          </div>
+
+          <!-- Cool duck -->
+          <div
+            class="min-w-full p-4 border-yellow-600 border-2 flex gap-4 relative rounded-lg mb-2"
+          >
+            <img
+              src="images/cool-duck.jpg"
+              alt="A rubber duck with sunglasses in a pool"
+              class="size-28 rounded-lg"
+            />
+            <div class="flex flex-col justify-center">
+              <a
+                href="products/cool-duck.html"
+                class="text-2xl yellow-link font-bold"
+                >Cool duck</a
+              >
+              <p class="font-thin">249:-</p>
+              <p class="text-lg font-thin">For the Mallis vacation.</p>
+              <a href="products/cool-duck.html" class="text-sm yellow-link"
+                >Read more...</a
+              >
+            </div>
+            <button
+              class="yellow-button absolute bottom-4 right-6 py-2 px-4 bg-yellow-600 text-black rounded-lg"
+            >
+              Add to cart
+            </button>
+          </div>
+
+          <!-- Bat duck -->
+          <div
+            class="min-w-full p-4 border-yellow-600 border-2 flex gap-4 relative rounded-lg mb-2"
+          >
+            <img
+              src="images/bat-duck.jpg"
+              alt="a rubber duck in a bat costume"
+              class="size-28 rounded-lg"
+            />
+            <div class="flex flex-col justify-center">
+              <a
+                href="products/bat-duck.html"
+                class="text-2xl yellow-link font-bold"
+                >Batduck</a
+              >
+              <p class="font-thin">299:-</p>
+              <p class="text-lg font-thin">
+                The duck you deserve, but not the one you need right now.
+              </p>
+              <a href="products/bat-duck.html" class="text-sm yellow-link"
+                >Read more...</a
+              >
+            </div>
+            <button
+              class="yellow-button absolute bottom-4 right-6 py-2 px-4 bg-yellow-600 text-black rounded-lg"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <a
+        class="bg-yellow-600 text-black text-center px-8 mx-auto mb-20 text-4xl/40 rounded-2xl yellow-button"
+        href="contact.html"
+      >
+        Click here to sign up for more ducks!
+      </a>
+    </main>
+    <footer
+      class="flex-1 h-30 w-full border-t-yellow-600 border-t-2 text-center text-xl/30 text-yellow-600"
+    >
+      Made by Herman Sollerman
+    </footer>
+  </body>
+</html>

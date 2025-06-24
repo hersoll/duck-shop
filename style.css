@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/*
+* These classes exist in addition to Tailwind to keep the HTML less verbose.
+* The colors in the class names refer to the text color (if link) or background color (if button)
+*/
+.black-link:hover {
+  color: var(--color-gray-800);
+}
+.black-link:active {
+  color: var(--color-gray-700);
+}
+
+.yellow-link:hover {
+  color: var(--color-yellow-700);
+}
+.yellow-link:active {
+  color: var(--color-yellow-800);
+}
+
+.yellow-button:hover {
+  background-color: var(--color-yellow-700);
+}
+.yellow-button:active {
+  background-color: var(--color-yellow-800);
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <!-- Icon pack -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <title>Contact Us - Duck Shop</title>
+  </head>
+  <body class="bg-gray-950 dark:[color-scheme:dark] font-mono">
+    <header
+      class="fixed z-100 bg-yellow-600 h-20 pl-4 pr-4 w-full flex place-content-between items-center"
+    >
+      <section class="text-4xl font-bold">
+        <a href="index.html" class="black-link">Duck Shop</a>
+      </section>
+      <nav class="flex gap-8 text-xl">
+        <a href="products.html" class="black-link">Products</a>
+        <a href="contact.html" class="black-link">Contact Us</a>
+        <a href="cart.html" class="black-link">Cart (3)</a>
+      </nav>
+    </header>
+    <main
+      class="pt-20 px-20 text-xl text-yellow-600 flex flex-col items-center justify-start gap-2"
+    >
+      <section class="flex flex-col items-center mb-20">
+        <h2 class="text-2xl mt-12 mb-6">
+          The creator of this site can be contacted here:
+        </h2>
+        <p>fake.email@email.com</p>
+        <p><i class="fi fi-brands-instagram"></i> @fakeinsta</p>
+        <p><i class="fi fi-brands-twitter"></i> @faketwitter</p>
+        <p><i class="fi fi-brands-tik-tok"></i> @faketiktok</p>
+      </section>
+
+      <!-- The default form submission did not work, it sent me to the home page no matter what I gave as action="".
+      That's why I have a button outside the form. -->
+      <section
+        class="bg-yellow-600 text-black flex flex-col p-4 max-w-200 rounded-lg"
+      >
+        <form
+          class="bg-yellow-600 text-black flex flex-col max-w-200 rounded-lg"
+        >
+          Do you want support, give feedback or are you simply curious about
+          ducks? Fill out the form below and we'll get in touch!
+          <label for="email" class="mt-4">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="border-black border-2 p-2 rounded-lg"
+            placeholder="first.last@email.com"
+          />
+          <label for="text" class="mt-4">Message:</label>
+          <textarea
+            id="text"
+            class="border-black border-2 p-2 min-h-40 items-start rounded-lg"
+            placeholder="Type your message here..."
+          ></textarea>
+        </form>
+        <button
+          onclick="window.location.href='/form-recieved.html'"
+          class="mt-4 border-black border-2 max-w-40 m-auto py-2 px-4 yellow-button rounded-lg"
+        >
+          Submit
+        </button>
+      </section>
+    </main>
+    <footer
+      class="fixed bottom-0 h-30 w-full border-t-yellow-600 border-t-2 text-center text-xl/30 text-yellow-600"
+    >
+      Made by Herman Sollerman
+    </footer>
+  </body>
+</html>
