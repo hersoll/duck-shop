@@ -352,6 +352,15 @@
   .min-w-40 {
     min-width: calc(var(--spacing) * 40);
   }
+  .min-w-200 {
+    min-width: calc(var(--spacing) * 200);
+  }
+  .min-w-400 {
+    min-width: calc(var(--spacing) * 400);
+  }
+  .min-w-1000 {
+    min-width: calc(var(--spacing) * 1000);
+  }
   .min-w-full {
     min-width: 100%;
   }
@@ -461,6 +470,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
